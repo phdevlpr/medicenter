@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
+* {
+    font-family: 'Noto Sans', sans-serif;
+    
+}
 body {
     margin: 0;
     padding: 0;
@@ -42,10 +46,8 @@ nav a {
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     color: #39aae1;
-    pointer-events: none;
 }
 
 nav a:hover {
@@ -53,4 +55,130 @@ nav a:hover {
    color: #fff;
    transition: 1s;
    border-radius: 4px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(assets/images/img1.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 670px;     
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 60px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+}
+
+.banner-text h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner-options {
+    height: 210px;
+    display: flex;
+
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    padding: 20px;
+
+}
+
+.banner1 {
+    background-color: #39aae1;
+}
+
+.banner2 {
+    background-color: #0079c7;
+}
+
+.banner3 {
+    background-color: #2b4c99;  
+}
+
+.bannerTitle {
+    color: #fff;
+    font-weight: 800;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-options p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-options a{
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner-options a:hover {
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+}
+.banner3 div {
+    display: flex;
+    align-items: space-around;
+    color: #fff;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.hours {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.hours dl {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 15px;
 }
